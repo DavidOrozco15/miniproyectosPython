@@ -157,7 +157,7 @@ def estadisticas():
         else:
             generos[genero] = 1
     
-    print(f"\n--- Estadísticas ---")
+    print("\n--- Estadísticas ---")
     print(f"Total de libros: {totalLibros}")
     print(f"Libros leídos (✅): {leidos}")
     print(f"Libros por leer (❌): {noLeidos}")
