@@ -11,8 +11,17 @@ def menuPrincipal():
         print("5. Análisis")
         print("6. Configuración")
         print("0. Salir")
-        opcion = input("Seleccione: ")
-        return opcion
+        
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1, 2, 3, 4, 5, 6}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")
 
 def menuClientes():
     while True:
@@ -23,8 +32,16 @@ def menuClientes():
         print("3. Mostrar clientes")
         print("4. Marcar cliente VIP")
         print("0. Volver")
-        opcion = input("Seleccione: ")
-        return opcion
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1, 2, 3, 4}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")
 
 def menuEmpleados():
     while True:
@@ -33,8 +50,16 @@ def menuEmpleados():
         print("1. Registrar empleado")
         print("2. Mostrar empleados activos")
         print("0. Volver")
-        opcion = input("Seleccione: ")
-        return opcion
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1, 2}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")
 
 def menuInventarioVentas():
     while True:
@@ -45,8 +70,16 @@ def menuInventarioVentas():
         print("3. Registrar venta")
         print("4. Mostrar historial de ventas")
         print("0. Volver")
-        opcion = input("Seleccione: ")
-        return opcion
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1, 2, 3, 4}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")
 
 def menuReportes():
     while True:
@@ -56,8 +89,16 @@ def menuReportes():
         print("2. Ventas por género")
         print("3. Ventas por plataforma")
         print("0. Volver")
-        opcion = input("Seleccione: ")
-        return opcion
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1, 2, 3}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")
 
 def menuAnalisis():
     while True:
@@ -67,8 +108,16 @@ def menuAnalisis():
         print("2. Análisis géneros populares")
         print("3. Análisis plataformas")
         print("0. Volver")
-        opcion = input("Seleccione: ")
-        return opcion
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1, 2, 3}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")
 
 def menuConfiguracion():
     while True:
@@ -76,6 +125,13 @@ def menuConfiguracion():
         print("\n--- MENÚ CONFIGURACIÓN ---")
         print("1. Configurar IVA y Descuento")
         print("0. Volver")
-        opcion = input("Seleccione: ")
-        return opcion
-        
+        try:
+            opcion = int(input("Seleccione: "))
+            if opcion in {0, 1}:
+                return opcion
+            else:
+                print("Error: Opción inválida. Intente nuevamente.")
+                input("Presione Enter para continuar...")
+        except ValueError:
+            print("Error: Debe ingresar un número entero.")
+            input("Presione Enter para intentar nuevamente...")

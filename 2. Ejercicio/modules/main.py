@@ -6,19 +6,19 @@ def main():
     while True:
         opcion = m.menu()
         match opcion:
-            case '1':
+            case 1:
                 c.agregar_libro()
-            case '2':
+            case 2:
                 c.ver_biblioteca()
-            case '3':
+            case 3:
                 c.buscar_libros()
-            case '4':
+            case 4:
                 c.cambiar_estado()
-            case '5':
+            case 5:
                 c.estadisticas()
-            case '6':
+            case 6:
                 c.eliminar_libro()
-            case '7':
+            case 7:
                 print("¡Hasta luego! 👋")
                 break
             case _:
